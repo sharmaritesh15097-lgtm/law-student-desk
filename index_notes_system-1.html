@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Law Student Desk - legal notes, case summaries, research and career resources for Indian law students.">
+<title>Law Student Desk | Legal Resources</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f7f8fb;line-height:1.6}
+header{background:#0d1b2a;color:#fff;position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:22px;font-weight:800}.logo span{color:#d4a72c}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{background:linear-gradient(135deg,#0d1b2a,#183a5a);color:white;padding:75px 20px}
+.hero-inner{max-width:1100px;margin:auto}
+.tag{color:#f1c75b;font-weight:700}
+.hero h1{font-size:48px;line-height:1.1;max-width:720px;margin:12px 0}
+.hero p{font-size:19px;max-width:680px;color:#dbe5ef}
+.btn{display:inline-block;background:#d4a72c;color:#111;text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:700;margin-top:12px}
+section{max-width:1100px;margin:auto;padding:55px 20px}
+.section-title{text-align:center;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e6e9ef;border-radius:12px;padding:22px;box-shadow:0 5px 18px rgba(0,0,0,.04)}
+.card h3{margin-top:8px}
+.icon{font-size:30px}
+.card-link{display:block;color:inherit;text-decoration:none;transition:.2s}
+.card-link:hover{transform:translateY(-3px)}
+.subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.subject{background:#fff;border:1px solid #e6e9ef;border-radius:12px;padding:22px}
+.subject h3{margin:6px 0}
+.subject p{color:#536174}
+.resource-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.resource-links span{font-size:13px;background:#eef2f7;padding:6px 10px;border-radius:18px}
+.search-box{max-width:650px;margin:0 auto 25px}
+.search-box input{width:100%;padding:14px 16px;border:1px solid #ccd3dd;border-radius:10px;font-size:16px}
+.notice{background:#fff8df;border-left:5px solid #d4a72c;padding:18px;border-radius:8px}
+.about{background:#fff}
+footer{background:#0d1b2a;color:#dbe5ef;padding:35px 20px;text-align:center}
+.footer-links a{color:#fff;margin:0 8px;text-decoration:none}
+.small{font-size:13px;color:#667085}
+@media(max-width:800px){
+.grid{grid-template-columns:repeat(2,1fr)}
+.subjects{grid-template-columns:1fr 1fr}
+.hero h1{font-size:36px}
+nav{display:none}
+}
+@media(max-width:500px){
+.grid,.subjects{grid-template-columns:1fr}
+.hero h1{font-size:34px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">Law Student <span>Desk</span></div>
+<nav>
+<a href="#subjects">Subjects</a>
+<a href="#cases">Cases</a>
+<a href="#research">Research</a>
+<a href="#career">Career</a>
+<a href="#about">About</a>
+</nav>
+</div>
+</header>
+
+<div class="hero">
+<div class="hero-inner">
+<div class="tag">FOR INDIAN LAW STUDENTS</div>
+<h1>Learn Law. Research Better. Build Your Legal Career.</h1>
+<p>Simple, student-friendly legal notes, landmark case summaries, research guidance and career resources.</p>
+<a class="btn" href="#subjects">Explore Resources →</a>
+</div>
+</div>
+
+<section id="subjects">
+<div class="section-title">
+<h2>Law Subjects</h2>
+<p>Choose a subject to find notes, PDFs, case summaries and important questions.</p>
+</div>
+
+<div class="search-box">
+<input id="search" type="search" placeholder="Search subjects or resources..." aria-label="Search resources">
+</div>
+
+<div class="subjects" id="subjectGrid">
+
+<div class="subject" data-search="constitutional constitution law notes cases">
+<div class="icon">📜</div><h3>Constitutional Law</h3>
+<p>Articles, doctrines, important judgments and study notes.</p>
+<div class="resource-links"><span>Notes</span><span>Case Laws</span><span>PDFs</span></div>
+</div>
+
+<div class="subject" data-search="criminal criminal law bns ipc bnss evidence notes">
+<div class="icon">⚖️</div><h3>Criminal Law</h3>
+<p>BNS, BNSS, Evidence and important criminal-law topics.</p>
+<div class="resource-links"><span>Notes</span><span>Case Laws</span><span>PDFs</span></div>
+</div>
+
+<div class="subject" data-search="contract contract law indian contract act notes">
+<div class="icon">📘</div><h3>Contract Law</h3>
+<p>Core concepts, sections, essentials and important cases.</p>
+<div class="resource-links"><span>Notes</span><span>Case Laws</span><span>PDFs</span></div>
+</div>
+
+<div class="subject" data-search="family family law hindu muslim marriage succession">
+<div class="icon">👨‍👩‍👧</div><h3>Family Law</h3>
+<p>Marriage, divorce, succession and other family-law topics.</p>
+<div class="resource-links"><span>Notes</span><span>Case Laws</span><span>PDFs</span></div>
+</div>
+
+<div class="subject" data-search="tort torts law notes negligence">
+<div class="icon">📝</div><h3>Law of Torts</h3>
+<p>Negligence, nuisance, liability and important principles.</p>
+<div class="resource-links"><span>Notes</span><span>Case Laws</span><span>PDFs</span></div>
+</div>
+
+<div class="subject" data-search="company corporate company law notes">
+<div class="icon">🏢</div><h3>Company Law</h3>
+<p>Companies, directors, meetings and corporate-law basics.</p>
+<div class="resource-links"><span>Notes</span><span>Case Laws</span><span>PDFs</span></div>
+</div>
+
+<div class="subject" data-search="property property law transfer property notes">
+<div class="icon">🏠</div><h3>Property Law</h3>
+<p>Transfer of property, ownership and related concepts.</p>
+<div class="resource-links"><span>Notes</span><span>Case Laws</span><span>PDFs</span></div>
+</div>
+
+<div class="subject" data-search="civil procedure cpc civil procedure code notes">
+<div class="icon">📚</div><h3>Civil Procedure</h3>
+<p>CPC concepts, procedures, limitation and important orders.</p>
+<div class="resource-links"><span>Notes</span><span>Case Laws</span><span>PDFs</span></div>
+</div>
+
+<div class="subject" data-search="other law legal subjects">
+<div class="icon">➕</div><h3>Other Subjects</h3>
+<p>Add more subjects here as your website grows.</p>
+<div class="resource-links"><span>Notes</span><span>Case Laws</span><span>PDFs</span></div>
+</div>
+
+</div>
+<p id="noResults" class="small" style="display:none;text-align:center;margin-top:20px">No matching resource found.</p>
+</section>
+
+<section id="cases">
+<div class="section-title"><h2>Case Summaries</h2><p>Keep landmark judgments in one place.</p></div>
+<div class="grid">
+<a class="card card-link" href="#"><div class="icon">⚖️</div><h3>Landmark Cases</h3><p>Add case summaries here later.</p></a>
+<a class="card card-link" href="#"><div class="icon">📌</div><h3>Case Notes</h3><p>Facts, issues, judgment and legal principle.</p></a>
+</div>
+</section>
+
+<section id="research">
+<div class="section-title"><h2>Legal Research</h2><p>Research tools and guides for students.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🔎</div><h3>Research Guide</h3><p>Add research methods, databases and citation guides later.</p></div>
+<div class="card"><div class="icon">✍️</div><h3>Legal Writing</h3><p>Add assignment, memorial and research-paper guidance later.</p></div>
+</div>
+</section>
+
+<section id="career">
+<div class="section-title"><h2>Career Resources</h2><p>Build a stronger legal career.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🎓</div><h3>Internships</h3><p>Add internship resources and application guidance later.</p></div>
+<div class="card"><div class="icon">📄</div><h3>CV & LinkedIn</h3><p>Add CV, LinkedIn and professional-profile resources later.</p></div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="section-title"><h2>About Law Student Desk</h2></div>
+<p>Law Student Desk is designed as an educational resource for Indian law students. The goal is to make legal concepts, case law and research methods easier to understand through clear and structured content.</p>
+<div class="notice"><strong>Disclaimer:</strong> The content on this website is for general educational and informational purposes only. It is not individual legal advice and does not create an advocate-client relationship. For a specific legal matter, consult a qualified legal professional.</div>
+</section>
+
+<section id="contact">
+<div class="section-title"><h2>Contact</h2><p>Have a topic suggestion or collaboration idea?</p></div>
+<div class="card" style="max-width:650px;margin:auto">
+<p><strong>Email:</strong> your-email@example.com</p>
+<p class="small">Replace this email with your professional email before publishing.</p>
+</div>
+</section>
+
+<footer>
+<div class="logo">Law Student <span>Desk</span></div>
+<p>Simple legal resources for the next generation of lawyers.</p>
+<div class="footer-links"><a href="#about">About</a><a href="#contact">Contact</a><a href="#subjects">Subjects</a></div>
+<p style="font-size:12px">© 2026 Law Student Desk. Educational resource.</p>
+</footer>
+
+<script>
+const search = document.getElementById('search');
+const cards = [...document.querySelectorAll('.subject')];
+const noResults = document.getElementById('noResults');
+
+search.addEventListener('input', () => {
+  const q = search.value.toLowerCase().trim();
+  let visible = 0;
+  cards.forEach(card => {
+    const match = !q || card.dataset.search.includes(q);
+    card.style.display = match ? '' : 'none';
+    if(match) visible++;
+  });
+  noResults.style.display = visible ? 'none' : 'block';
+});
+</script>
+
+</body>
+</html>
